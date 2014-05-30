@@ -9,6 +9,7 @@ Raises a SerializationError if you send it an object json or cjson cannot handle
 Tries to use cjson for serializing objects, because you wouldn't be needing a silly thing like this if you weren't handling big old objects.
 
 Usage:
+
 	import JSONStreamWriter.JSONStreamWriter as JSONStreamWriter 
 	f = "foo.json" # or file-like object
 	with JSONStreamWriter.ArrayWriter(f) as jstream:
